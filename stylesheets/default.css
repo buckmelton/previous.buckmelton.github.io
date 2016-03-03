@@ -1,0 +1,127 @@
+/* Prevent 'margin collapse' from causing default empty space around edges of page. */
+body, h1, h3, h4, h5, p {
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+header section {
+	background-image: url("../imgs/goldengate.jpg");
+	background-position: -300px -300px;
+	height: 350px;
+	text-align: center;
+	color: #444466;
+}
+
+h1 {
+	padding-top: 50px;
+	font-size: 36px;
+}
+
+h5 {
+	font-size: 14px;
+}
+
+/*body {
+	background-color: red;
+}*/
+
+/*header {
+	background-color: LightBlue;
+}*/
+
+nav {
+	background-color: #444466;
+	border-radius: 10px;
+	text-align: center;
+	margin: 20px 20px 0px 20px;
+	color: white;
+	padding: 10px;
+}
+
+a {
+	text-decoration: none;
+}
+
+header section a:link, header section a:visited, .index-item a:link, .index-item a:visited {
+	color: #444466;
+}
+
+header section a:hover {
+	color: #ff4f00;
+}
+
+nav a:link, nav a:visited {
+	color: white;
+}
+
+nav a:hover {
+	color: #ff4f00;
+}
+
+nav ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+nav li {
+	display: inline;
+	float: left;
+	width: 16.6%;
+}
+
+.nav-clear {
+	clear: both;
+}
+
+.index-item a:hover {
+	color: white;
+}
+
+footer {
+	background-color: #444466;
+	text-align: center;
+	padding: 15px;
+	color: white;
+	/*background-image: url("../imgs/goldengate.jpg");
+	background-position: -300px -650px;*/
+}
+
+main {
+	/*background-color: green;*/
+	/* Not entirely sure why, but the following two lines avoid the footer margin collapsing up over
+	the top of main. */
+	overflow: auto;
+	width: 100%;
+}
+
+.index-item {
+	height: 450px;
+	width: 28.3%;
+	float: left;
+	margin: 20px;
+	border-radius: 10px;
+	padding: 10px 20px 20px 20px;
+	overflow: hidden;
+}
+
+.index-item img {
+	width: 100%;
+}
+
+#about {
+	background-color: #5588cc;
+	margin-right: 0px;
+}
+
+#portfolio {
+	background-color: rgb(250,220,100);
+	margin-right: 0px;
+}
+
+#blog {
+	background-color: #ff4f00;
+}

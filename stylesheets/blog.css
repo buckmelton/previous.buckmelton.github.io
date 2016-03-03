@@ -1,0 +1,36 @@
+.blog-nav {
+	float: left;
+	width: 15%;
+	height: 400px;
+	margin-bottom: 20px;
+	background-color: #5588cc;
+}
+
+.blog-main {
+	float: left;
+	width: 76%;
+	height: 550px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 20px;
+	border-radius: 10px;
+	background-color: rgb(250,220,100);
+}
+
+.blog-main p {
+	padding-bottom: 10px;
+}
+
+.blog-clear {
+	overflow: auto;
+	width: 100%;
+}
+
+.blog-main a:link {
+	text-decoration: none;
+	color: #444466;
+}
+
+.blog-main a:hover {
+	color: #ff4f00;
+}
