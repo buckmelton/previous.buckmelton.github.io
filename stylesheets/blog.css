@@ -9,7 +9,7 @@
 .blog-main {
 	float: left;
 	width: 76%;
-	height: 550px;
+	/*height: 550px;*/
 	margin-top: 20px;
 	margin-bottom: 20px;
 	padding: 20px;
@@ -33,4 +33,9 @@
 
 .blog-main a:hover {
 	color: #ff4f00;
+}
+
+.blog-main img {
+	width: 100%;
+	padding: 10px 0px;
 }
