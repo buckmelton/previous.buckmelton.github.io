@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>Blog | Troops, Fall Inline!</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  </head>
+
+  <body>
+
+    <header>
+
+      <section>
+        <h1>BUCK MELTON - FULL STACK WEB DEVELOPER</h1>
+        <h5>LinkedIn: <a href="http://www.linkedin.com/buckmelton">www.linkedin.com/buckmelton</a> | GitHub: <a href="http://www.github.com/buckmelton">www.github.com/buckmelton</a> | Email: <a href="mailto:buckm@alumni.stanford.edu">buckm@alumni.stanford.edu</a></h5>
+      </section>
+
+      <nav>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="blog-index.html">Blog</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-clear"></div>
+      </nav>
+
+    </header>
+
+    <nav class="blog-nav">
+      <calendar>
+        <img src="../imgs/calendar.png" alt="Calendar">
+      </calendar>
+    </nav>
+
+    <main class="blog-main">
+
+      <H2>Troops, Fall Inline!</h2>
+      <h5>March 3, 2016</h5>
+
+      <img src="../imgs/inline.jpg" alt="Inline Skate">
+
+      <p>When learning CSS Layout principles, there are several concepts that are difficult to grasp.  What's the difference between a class selector and an id selector and when would you use each?  What are the differences between static, relative, absolute, and fixed positioning?  What are margin, border, and padding and how do they relate to each other?  In this blog post, we'll be tackling the concept of the display attribute, and its values of block, inline, and inline-block.
+      </p>
+
+      <p>Every html element has a default display attribute.  Many of the most common 'top-level' original html elements have 'display: block'.  Block means "don't put anything else on this line.  Put the following element on the next line."  HTML elements having block display include paragraph &lt;p&gt; and header elements such as &lt;h1&gt;.  When you have a &lt;p&gt; or an &lt;h1&gt;, do you ever (by default) see anything to the right of it?  No!  That's because they are block elements.  No matter how short the paragraph or header is, you will not see anything to the right of it.</p>
+
+      <p>An inline element, by contrast, expects to have other inline elements to its left and to its right.  Typical 'display: inline' elements include text, anchor, and span.  The flow of these elements is "inline" like normal text.</p>
+
+      <p>The creation of the inline-block value for display was motivated by a problem. Designers wanted to have "blocks" of content that not only could be stacked on top of each other, but that could also be set next to each other, side-by-side. Such a "block" would only take up part of the width of the page, with adjacent "blocks" of content flowing "inline" across the page.  But the original definition of the HTML 'inline' value was mainly concerned with text, and didn't provide any ability to set a width or height, because text has an inherent width and height that would be followed implicitly.  But when laying out boxes of content across a page you want very precise control over width and height of the boxes.  For example, you might want 3 boxes of content across the page to all have the same width and the same height.</p>
+
+      <p>To overcome the limitations of the 'block' and 'inline' display values, and allow separate boxes of content to be laid out across the page, the display value 'inline-block' was created.  Elements with 'display: inline-block' flow across the page just like inline elements such as text, anchor, and span, but they can also be given specific widths and heights just like block elements.</p>
+
+      <p>'Display: inline' is used for elements that should flow across the page like text, and for which it isn't important to exert extra or specific control over the width or height because the inherent width and height of the element are sufficient.</p>
+
+      <p>'Display: inline-block' is used for elements that should flow across the page, but for which it is important to specify a particular width and/or height that is not inherent in the element.  For example: 3 separate boxes of content of equal width and height that you want to appear across the page.</p>
+
+      <p>'Display: float' is another option, not addressed here, that is often used where 'display: inline-block' would also be appropriate.  'Display: float' and 'display: inline-block' each have their advantages, disadvantges, and quirks but can usually accomplish much the same thing.  The differences and uses of 'display: float' and 'display: inline-block' are too extensive to be delved into in this post and will have to wait until a future post.</p>
+
+      <p><a href="#"> << Previous Post</a> | <a href="#">Home</a> | <a href="#">Next Post >> </a></p>
+
+    </main>
+
+    <div class="blog-clear"></div>
+
+    <footer>
+      Copyright &copy; 2016
+    </footer>
+
+  </body>
+
+</html>
