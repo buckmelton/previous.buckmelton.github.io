@@ -25,14 +25,6 @@ h5 {
 	font-size: 14px;
 }
 
-/*body {
-	background-color: red;
-}*/
-
-/*header {
-	background-color: LightBlue;
-}*/
-
 nav {
 	background-color: #444466;
 	border-radius: 10px;
@@ -81,17 +73,22 @@ nav li {
 	color: white;
 }
 
+#contact a:link, #contact a:visited {
+	color: #444466;
+}
+
+#contact a:hover {
+	color: white;
+}
+
 footer {
 	background-color: #444466;
 	text-align: center;
 	padding: 15px;
 	color: white;
-	/*background-image: url("../imgs/goldengate.jpg");
-	background-position: -300px -650px;*/
 }
 
 main {
-	/*background-color: green;*/
 	/* Not entirely sure why, but the following two lines avoid the footer margin collapsing up over
 	the top of main. */
 	overflow: auto;
@@ -124,4 +121,17 @@ main {
 
 #blog {
 	background-color: #ff4f00;
+}
+
+#contact {
+	background-color: #5588cc;
+	margin: 20px;
+	border-radius: 10px;
+	padding: 10px 20px 20px 20px;
+	overflow: hidden;
+}
+
+.flag {
+	color: red;
+	font-weight: bolder;
 }
