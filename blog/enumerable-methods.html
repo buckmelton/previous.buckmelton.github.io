@@ -48,7 +48,25 @@
       <p>Everybody knows that the stars are enumerable ... oh, wait, that's INnumerable!  "Enumerable" is basically the opposite of Innumerable.  Innumerable objects can't be counted.  Enumerable objects are a collection of items that CAN be counted.  There are many types of such objects in Ruby, foremost being Arrays and Hashes (which we discussed last week).  All Enumerable objects share a bunch of methods that can be done on them, some very handy.
       </p>
 
-      <p>One example of a handy Enumerable method is 'group_by'.  When you call 'group_by' on an Enumerable, you also hand it a bit of code. 'group_by'
+      <p>One example of a handy Enumerable method is 'group_by'.  Here is what 'group_by' does:
+      </p>
+
+      <p>When you call 'group_by' on an Enumerable, you also hand it a bit of code. 'group_by' takes that block of code, runs it on every entry in the Enumerable object, and places the entries into groups based on that value.  'group_by' returns a Hash; the keys of the hash are the set of values that were obtained by running the code on each entry, and the values are arrays of the original entries which evaluated to that key.
+      </p>
+
+      <p>
+      Suppose you are given a list of some California zip codes, and you need to group them by their first 2 digits.  The list we are given contains zips starting with 90, 92, and 94:
+
+      <code>calif_zips = [ 94114, 90069, 92010, 94035, 94305, 94025, 90101 ]<br/>
+            => [94114, 90069, 92010, 94035, 94305, 94025, 90101]</code>
+
+      We hand 'group_by' a bit of code that evaluates to the first two digits of the zip.  'group_by' then groups all the zips based on that evaluation.
+
+      <code>calif_zips.group_by { |zip| (zip.to_s)[0..1] }<br/>
+            => { "94"=>[94114, 94035, 94305, 94025], "90"=>[90069, 90101], "92"=>[92010] }</code>
+      </p>
+
+      <p>This is a pretty trivial example.  But imagine if, instead of zip codes, you had a collection of more elaborate data structures and you were trying to group them based on some commonality hidden down in the structure or on some calculation or operation on one or more attributes buried in the data structures.  For example, Employee records at a company.  The Employee data structure might contain important benefits information.  The Benefits Administrator may want to group employees by health plan and number of dependents to determine which plans were serving families better.  This could be done quickly via 'group_by' and a block of code to retrieve the plan and number of dependents into a coded value that employees are grouped by.
       </p>
 
       <a href="#"><span class="flag">PROVIDE LINK</span> << Previous Post </a> | <a href="../blog-index.html">Blog Home</a> | <a href="#"><span class="flag">PROVIDE LINK</span> Next Post >> </a>
