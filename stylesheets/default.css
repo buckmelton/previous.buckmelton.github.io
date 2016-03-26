@@ -109,6 +109,10 @@ main {
 	width: 100%;
 }
 
+.index-item h3, .index-item h4 {
+	color: #444466;
+}
+
 #about {
 	background-color: #5588cc;
 	margin-right: 0px;
@@ -123,7 +127,7 @@ main {
 	background-color: #ff4f00;
 }
 
-#contact {
+#contact, #about-page {
 	background-color: #5588cc;
 	margin: 20px;
 	border-radius: 10px;
