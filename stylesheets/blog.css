@@ -20,6 +20,11 @@
 	background-color: rgb(250,220,100);
 }
 
+.blog-main h2 {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
 .blog-main p {
 	padding-bottom: 10px;
 }
