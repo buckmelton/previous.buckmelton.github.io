@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>Blog | JavaScript Loops vs Ruby Loops</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  </head>
+
+  <body>
+
+    <header>
+
+      <section>
+        <h1>BUCK MELTON - FULL STACK WEB DEVELOPER</h1>
+        <h5>LinkedIn: <a href="http://www.linkedin.com/buckmelton">www.linkedin.com/buckmelton</a> | GitHub: <a href="http://www.github.com/buckmelton">www.github.com/buckmelton</a> | Email: <a href="mailto:buckm@alumni.stanford.edu">buckm@alumni.stanford.edu</a></h5>
+      </section>
+
+      <nav>
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../portfolio.html">Portfolio</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+          <li><a href="../blog-index.html">Blog</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-clear"></div>
+      </nav>
+
+    </header>
+
+    <nav class="blog-nav">
+      <calendar>
+        <img src="../imgs/calendar.png" alt="Calendar">
+      </calendar>
+    </nav>
+
+    <main class="blog-main">
+
+      <h2>Feeling A Little Loopy Here</h2>
+      <h3>JavaScript Loops versus Ruby Loops</h3>
+      <h5>April 1, 2016</h5>
+
+      <img src="../imgs/roller-coaster-loop.jpg" alt="Roller Coaster Loop">
+
+      <p>Looping around and around on a roller coaster - it's fun, but it can make your head spin!  Learning about looping in programming languages is fun too, and can also make your head spin, particularly when you learn multiple languages and every language implements looping just a little bit, or a lot, differently.  JavaScript and Ruby, for example, are both a little bit different and a lot different.
+      </p>
+
+      <p>JavaScript's looping structures are more in line with the classic looping structures introduced by the original structural programming languages.  Ruby has those classic looping structures from the earlier days of programming, and in fact has more options for classic looping than JavaScript has.  However, Ruby was created after object-oriented paradigms became the preferred method of expression in programming, and so Ruby has native and natural object-oriented looping structures that are its structures of choice.</p>
+
+      <p>Another way of expressing this: earlier looping structures tended to reflect the then-prevailing idea of the primacy of the program as a sequence of steps to be executed, and this external flow of steps operated on data and objects.  By contrast, the later object-oriented paradigm views software as a collection of objects sending messages to each other, and that each collection object innately and internally knows how to loop through its elements.</p>
+
+      <p>The following two examples pretty much exhaust the options for JavaScript looping structures, which are emblematic of classic structural programming:
+        <pre>  
+        for
+          Execute the loop a specified number of times
+
+        while
+          Execute the loop as long as the specified condition is true
+        </pre></p>
+
+      <p>Ruby has the same 'for' and 'while' looping, as well as a similar structure 'until'.  In addition, Ruby has, built in, a great abundance of looping structures that reflect an object-oriented paradigm.  Here's is just the tiniest sampler:
+        <pre>
+        Enumerable#all
+          Do all elements of the collection return true for the specified code block?
+
+        Enumerable#cycle
+          Calls the specified code block on each element of the collection, and does that over and over again for a specfied number of times.
+
+        Enumerable#each
+          Calls the specified code block on each element of the collection.
+
+        Enumerable#map
+          Transforms each element of the collection according to the specified code block.
+
+        Array#reverse
+          Reverse the elements of the array.
+
+        Hash#has_key?
+          Return true if the key exists in the hash.
+        </pre>
+      </p>
+
+      <a href="#"><span class="flag">PROVIDE LINK</span> << Previous Post </a> | <a href="../blog-index.html">Blog Home</a> | <a href="#"><span class="flag">PROVIDE LINK</span> Next Post >> </a>
+
+    </main>
+
+    <div class="blog-clear"></div>
+
+    <footer>
+      Copyright &copy; 2016 Buck Melton
+    </footer>
+
+  </body>
+
+</html>
