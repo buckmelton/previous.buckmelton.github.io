@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Buck Melton | Git Cheat Sheet</title>
+	<link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+</head>
+
+<body>
+
+	<header>
+
+		<section>
+			<h1>BUCK MELTON - FULL STACK WEB DEVELOPER</h1>
+			<h5>LinkedIn: <a href="http://www.linkedin.com/buckmelton">www.linkedin.com/buckmelton</a> | GitHub: <a href="http://www.github.com/buckmelton">www.github.com/buckmelton</a> | Email: <a href="mailto:buckm@alumni.stanford.edu">buckm@alumni.stanford.edu</a></h5>
+		</section>
+
+		<nav>
+			<ul>
+				<li><a href="../about.html">About</a></li>
+				<li><a href="port-index.html">Portfolio</a></li>
+				<li><a href="../resume.html">Resume</a></li>
+				<li><a href="../blog-index.html">Blog</a></li>
+				<li><a href="../projects.html">Projects</a></li>
+				<li><a href="../contact.html">Contact</a></li>
+			</ul>
+			<div class="nav-clear"></div>
+		</nav>
+
+	</header>
+
+	<main>
+
+		<section class="page-main-heading">
+			<h3>Git Cheat Sheet</h3>
+		</section>
+
+	 	<section class="index-item" id="about">
+			<h4>Create a new repository on GitHub and clone it to your local computer</h4>
+			<ul>
+				<li>On GitHub choose "Create New Repository"</li>
+				<li>Name the repository</li>
+				<li>Make it public or private</li>
+				<li>Choose whether to auto-include a README file</li>
+				<li>Choose a license (for DBC we've been using MIT License)</li>
+				<li>Click "Create"</li>
+				<li>Copy the URL for cloning</li>
+				<li>On your local computer, navigate to the directory in which you want the repository directory to be created.  To be clear, whatever directory you are in, Git will be creating a subdirectory with the name of the repository, and the files for that repository will be inside the Git-created subdirectory.</li>
+				<li>At the command line enter</br></br>
+				<code>git clone</code></br></br>
+				then paste the URL after and enter.</li>
+			</ul>
+		</section>
+
+		<section class="index-item" id="portfolio">
+			<h4>Create a new branch and move into it to start work in it</h4>
+			<ul>
+				<li>Make sure you are in the branch you want to branch off of.  Often, you want to branch off of master.  To make sure you are in master:</br></br>
+
+				<code>git checkout master</code></br></br></li>
+
+				<li>Create and move into the new branch, let's call the new branch awesome-feature-branch:</br></br>
+
+				<code>git checkout -b awesome-feature-branch</code></li>
+
+			</ul>
+		</section>
+
+		<section class="index-item" id="blog">
+			<h4>Stage (add) files that you've edited in the current branch</h4>
+			<ul>
+				<li>Before adding (staging) your files prior to a commit, you can double-check the status of files that have had changes to them:</br></br>
+
+				<code>git status</code></br></br></li>
+
+				<li>Add (stage) the files:</br></br>
+
+				<code>git add &lt;filename&gt;</code></br></br></li>
+
+				<li>Or, to add all the changed files at once:</br></br>
+
+				<code>git add .</code></br></br></li>
+
+				<li>Optionally check the status again to ensure that they were actually added:</br></br>
+
+				<code>git status</code></li>
+
+			</ul>
+		</section>
+
+	</main>
+
+	<footer>
+		Copyright &copy; 2016
+	</footer>
+
+</body>
+
+</html>
