@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <title>Blog | SQL Injection</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+  </head>
+
+  <body>
+
+    <header>
+
+      <section>
+        <h1>BUCK MELTON - FULL STACK WEB DEVELOPER</h1>
+        <h5>LinkedIn: <a href="http://www.linkedin.com/buckmelton">www.linkedin.com/buckmelton</a> | GitHub: <a href="http://www.github.com/buckmelton">www.github.com/buckmelton</a> | Email: <a href="mailto:buckm@alumni.stanford.edu">buckm@alumni.stanford.edu</a></h5>
+      </section>
+
+      <nav>
+        <ul>
+          <li><a href="../about.html">About</a></li>
+          <li><a href="../portfolio.html">Portfolio</a></li>
+          <li><a href="../resume.html">Resume</a></li>
+          <li><a href="../blog-index.html">Blog</a></li>
+          <li><a href="../projects.html">Projects</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-clear"></div>
+      </nav>
+
+    </header>
+
+    <nav class="blog-nav">
+      <calendar>
+        <img src="../imgs/calendar.png" alt="Calendar">
+      </calendar>
+    </nav>
+
+    <main class="blog-main">
+
+      <H2>But I'm Afraid of Needles!</h2>
+      <h2>SQL Injection</h2>
+      <h5>April 4, 2016</h5>
+
+      <img src="../imgs/sticker-sql-injection.png" alt="SQL Injection Sticker">
+
+      <p>In today's world where we're constantly bombarded about news of hackers accessing all types of supposedly secure databases on a global scale, it's hard to know where to begin when trying to secure your dynamic website.  One of the easiest things to defend against is the type of attack known as 'SQL Injection'.
+      </p>
+
+      <p>What is SQL Injection?  To explain, maybe it will help to explain the name.  SQL is the most-widely used language that is used specifically to access and manipulate databases.  When you enter a search term, or fill out a form, whatever you type in makes its way into a SQL statement that is used to access the database and retrieve or manipulate the data you want.
+      </p>
+
+      <p>For example, let's say you are looking up a classmate on your college's online alumni directory.  There might be blanks 'First Name' and 'Last Name'.  You type in 'Chelsea' and 'Clinton', and submit the form.  This gets translated into something like this:</br></br>
+
+      <code>select * from students where first_name = 'Chelsea' and last_name = 'Clinton';</code>
+
+      This SQL statement is issued to the database, which returns all the information it has on Chelsea Clinton.</br></br>
+
+      Suppose that instead of 'Clinton', you typed in
+
+      <a href="#"><span class="flag">PROVIDE LINK</span> << Previous Post </a> | <a href="../blog-index.html">Blog Home</a> | <a href="#"><span class="flag">PROVIDE LINK</span> Next Post >> </a>
+
+    </main>
+
+    <div class="blog-clear"></div>
+
+    <footer>
+      Copyright &copy; 2016 Buck Melton
+    </footer>
+
+  </body>
+
+</html>
