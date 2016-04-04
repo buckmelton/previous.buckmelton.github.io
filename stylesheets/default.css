@@ -135,7 +135,20 @@ main {
 	overflow: hidden;
 }
 
+.page-main-heading {
+	background-color: #5588cc;
+	margin: 20px 20px 0px 20px;
+	border-radius: 10px;
+	padding: 10px 20px 10px 20px;
+	overflow: hidden;
+	color: #444466;
+}
+
 .flag {
 	color: red;
 	font-weight: bolder;
+}
+
+.index-item ul {
+	padding-left: 20px;
 }
